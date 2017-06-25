@@ -190,6 +190,17 @@ $map =	compact( 'id', 'class', 'content' );
 ## Building Shortcode Templates
 Creating templates for your shortcodes makes it possible for you to separate logic from presentation in situations where it makes the most sense. This is not necessary in all cases especially if you are only returning a single line of code. Setting up a template for your shortcode is really easy. Once you create the html template for your shortcode you just need to create a *Template Map* that merges shortcode content with your template.
 
+### The Template Directory
+Before creating your shortcode's template its a good idea to confirm where you want the boilerplate to look when loading a template. The default directory is ```public/templates/your-shortcode-template.php``` To change this you only need to add the property below to your shortcode's class pointing to the name of the directory where you want the boilerplate to look.
+ ```php
+ public $template_directory ='directory-name';
+ ```
+ The bolierplate will now load your template from ```public/templates/directory-name```.
+ If you want to change the full directory then you just need to edit [shortcode-bp-template-loader.php](https://github.com/FiGOBLAC/Shortcode-Boilerplate/blob/master/public/class-shortcode-bp-template-loader.php) and modify the line below:
+ ```php
+ protected $plugin_template_directory = 'public/templates';
+ ```
+
 ### The Template Map
 A template map is an associative array that contains content that you want to display in a template. The *keys* in the array represent the name of the variables placed in the body of your template. The value stored in each *key* will replace any variables that matches the *key* in the array. Here we use the ```compact()``` function for our template map because its easier and cleaner than explicitly writing out an associate array.
 ```php
