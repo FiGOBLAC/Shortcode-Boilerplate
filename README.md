@@ -22,7 +22,7 @@ The Shortcode Boilerplate helps to keep you independently focused on two things,
 * [Gamajo-Template-Loader](https://github.com/GaryJones/Gamajo-Template-Loader)
 
 ## Contributing
-This boilerplate isn't perfect so any contribution is welcomed. Any pull requests should be against the dev branch.
+This boilerplate isn't perfect so any contribution is welcomed.
 
 ## Installation
 1. Clone the master branch of this respository or download the files into your WordPress plugins folder on your local machine.
