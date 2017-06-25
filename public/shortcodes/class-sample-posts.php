@@ -71,9 +71,6 @@ if( ! class_exists( 'Sample_Posts' ) ) {
             // Get the name of the current shortcode.
             $class = $attributes['class'];
 
-			// Add a header to the top of posts.
-			$posts_header = ( 'alternate' === $attributes['version'] ) ? 'Alternate Sample Post Template' : 'Sample Posts';
-
             // Multi sub template map for posts.
             $sample_posts = $this->get_sample_posts();
 
