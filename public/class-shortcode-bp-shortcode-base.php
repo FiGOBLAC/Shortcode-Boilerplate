@@ -189,7 +189,7 @@ abstract class Shortcode_BP_Shortcode_Base {
 		// Determine the type of template that should be loaded.
 		$template = ! empty( $custom_template ) && ( '_sub' !== $custom_template ) ? $custom_template : $template;
 
-        // Ignore base template checking when there are no versions are found for sub templates.
+        // Ignore base template checking when there are no versions found for sub templates.
 		$template = ( empty( $this->attributes[ $this->version_handle ] ) && ( '_sub' === $custom_template ) ) ? false : $template;
 
         // Checks for template in a directory.
