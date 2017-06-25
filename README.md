@@ -36,9 +36,9 @@ There are two sample shortcodes and sample dropcap shortcode included demonstrat
 
 <pre>[sample_shortcode version='alternate']Another sample shortcode using an alternate template![/sample_shortcode]</pre>
 
-<pre>[sample_posts/]</pre>
+<pre>[sample_posts]</pre>
 
-<pre>[sample_posts version = 'alternate'/]</pre>
+<pre>[sample_posts version = 'alternate']</pre>
 
 ## Getting Started
 After downloading the files into your wordpress plugin directory you can rename all your files to the name of your plugin or whatever name you prefer and replace all instances of ```Shortcode_BP```,```shortcode_bp``` and ```sbp``` with your own.
